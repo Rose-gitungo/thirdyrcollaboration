@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="select payment method"
+        android:textSize="20sp" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <RadioButton
+                  android:id="@+id/radioButton1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"
+                  android:drawableLeft="@drawable/ic_baseline_account_balance_wallet_24"
+                  android:drawableTint="#0BBFAE"
+                  android:padding="10dp"
+                  android:text="Paynow\n\n\n\n Your wallet :KSH 0" />
+
+
+              <RadioButton
+                 android:id="@+id/radioButton2"
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="20dp"
+                 android:padding="10dp"
+                 android:layout_margin="10dp"
+                 android:layout_height="wrap_content"
+                 android:text="Mpesa On Delivery" />
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:layout_margin="20dp"
+                  android:text="subtotal:"
+                  android:id="@+id/subtotal"
+                  android:textSize="20sp" />
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:layout_margin="20dp"
+                  android:id="@+id/service"
+                  android:text="service:"
+                  android:textSize="20sp" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:layout_margin="20dp"
+                  android:text="Total:"
+                  android:id="@+id/total"
+                  android:textSize="20sp" />
+
+          </LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    android:text="proceed to summary"/>
+  </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

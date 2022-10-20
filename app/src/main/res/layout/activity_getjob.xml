@@ -12,131 +12,116 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/autoCompleteTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="25dp"
-                android:background="#54B9E8"
-                android:gravity="center"
-                android:text="hire me"
-                android:textAllCaps="true"
-                android:textSize="34sp"
-                android:textStyle="bold|italic" />
-
-            <TextView
                 android:id="@+id/description"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:background="#96DFE8"
-                android:text="You can write about your years of experience, industry, or skills.People also talk about their achievement or previous job experiences."
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textStyle="normal" />
-
-            <EditText
-                android:id="@+id/traininghireme"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textSize="20sp"
+                android:dropDownWidth="match_parent"
+                android:text="Industry involved"
+                android:gravity="center" />
+            <Spinner
+                android:id="@+id/jobindustry"
                 android:layout_width="match_parent"
-                android:layout_height="54dp"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:dropDownWidth="70dp"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:maxLines="2"
                 android:layout_margin="10dp"
-                android:ems="10"
-                android:gravity="start|top"
-                android:hint="Enter Summary"
-                android:inputType="textMultiLine"
-                android:singleLine="true"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:dropDownSelector="@android:color/darker_gray" />
+
+
             <TextView
                 android:id="@+id/training"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
                 android:layout_margin="10dp"
-                android:background="#8DD2F1"
                 android:gravity="center"
-                android:text="Enter Background  Training"
+                android:text="Years of experience in field"
                 android:textSize="20sp"
-                android:textStyle="bold|italic" />
-
-            <com.google.android.material.textfield.TextInputLayout
+                android:textStyle="italic" />
+            <Spinner
+                android:id="@+id/yrs"
+                android:dropDownWidth="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Input Background Training" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:maxLines="2"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:dropDownSelector="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/genderbelow"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp">
+                android:layout_height="37dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Select your gender below"
+                android:textSize="20sp"
+                android:textStyle="italic" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Input Gender" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
+            <Spinner
+                android:id="@+id/gender"
+                android:maxLines="2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:dropDownWidth="match_parent"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:layout_margin="10dp"
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:hint="preferred Price Range" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Phone Number"
-                    android:inputType="phone" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:dropDownSelector="@android:color/darker_gray" />
 
 
             <TextView
-                android:id="@+id/paychoicegetjob"
+                android:id="@+id/location"
                 android:layout_width="match_parent"
-                android:layout_height="49dp"
+                android:layout_height="37dp"
                 android:layout_margin="10dp"
-                android:background="#78BBF1"
                 android:gravity="center"
-                android:text="Select Mode Of Payment"
-                android:textSize="24dp" />
+                android:text="Select preffered city of to work"
+                android:textSize="20sp"
+                android:textStyle="italic" />
 
-            <LinearLayout
+            <Spinner
+                android:id="@+id/city"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <CheckBox
-                    android:id="@+id/checkBoxget"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="15dp"
-                    android:text="Mpesa" />
+                android:padding="30dp"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_margin="10dp"
+                android:dropDownWidth="match_parent"
+                android:dropDownSelector="@android:color/darker_gray" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
 
-                <CheckBox
-                    android:id="@+id/checkBoxjob"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="15dp"
-                    android:text="Card" />
-            </LinearLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input Phone Number"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <Button
                 android:id="@+id/savebutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="75dp"
-                android:hint="Save"
+                android:backgroundTint="#009688"
+                android:hint="Post!"
                 android:textSize="20sp" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

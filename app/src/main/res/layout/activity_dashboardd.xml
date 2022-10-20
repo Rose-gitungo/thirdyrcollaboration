@@ -6,122 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".dashboardd">
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="cursive"
-            android:text="Jobs available-Manual"
-            android:textSize="24sp" />
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="300dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="30dp"
-                    android:src="@drawable/string"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/theory"
-                    android:layout_margin="30dp"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="30dp"
-                    android:src="@drawable/milky"/>
-
-            </LinearLayout>
-        </HorizontalScrollView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="cursive"
-            android:text="Jobs available-personal assistants"
-            android:textSize="24sp" />
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="300dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="30dp"
-                    android:src="@drawable/t1"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/t1"
-                    android:layout_margin="30dp"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/t3"
-                    android:layout_margin="30dp"/>
-
-            </LinearLayout>
-        </HorizontalScrollView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="cursive"
-            android:text="Jobs available-universal works"
-            android:textSize="24sp" />
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="300dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="30dp"
-                    android:src="@drawable/string"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/theory"
-                    android:layout_margin="30dp"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="30dp"
-                    android:src="@drawable/milky"/>
-
-            </LinearLayout>
-        </HorizontalScrollView>
-    </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
 
     <FrameLayout
         android:id="@+id/framelay"
@@ -129,12 +14,15 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_nav" />
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/navigation_menu"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/teal_200"
+        app:itemTextColor="@color/teal_200"
+        app:menu="@menu/navigation_menu" />
 
 
 </RelativeLayout>

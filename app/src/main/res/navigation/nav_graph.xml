@@ -2,6 +2,39 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardd">
 
+    <activity
+        android:id="@+id/dashboardd"
+        android:name="com.example.kazimtaani.dashboardd"
+        android:label="activity_dashboardd"
+        tools:layout="@layout/activity_dashboardd" />
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.example.kazimtaani.homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" >
+        <action
+            android:id="@+id/action_homefragment_to_dashboardd"
+            app:destination="@id/dashboardd" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilefragment"
+        android:name="com.example.kazimtaani.profilefragment"
+        android:label="fragment_profilefragment"
+        tools:layout="@layout/fragment_profilefragment" >
+        <action
+            android:id="@+id/action_profilefragment_to_dashboardd"
+            app:destination="@id/dashboardd" />
+    </fragment>
+    <fragment
+        android:id="@+id/postjobfragment"
+        android:name="com.example.kazimtaani.postjobfragment"
+        android:label="fragment_postjobfragment"
+        tools:layout="@layout/fragment_postjobfragment" >
+        <action
+            android:id="@+id/action_postjobfragment_to_dashboardd"
+            app:destination="@id/dashboardd" />
+    </fragment>
 </navigation>

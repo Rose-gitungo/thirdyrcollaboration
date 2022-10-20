@@ -4,6 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".postjobfragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -15,12 +18,94 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:fontFamily="cursive"
             android:gravity="center"
             android:text="Select job category"
             android:textSize="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:dropDownWidth="match_parent"
+            android:padding="30dp"
+            android:dropDownSelector="@android:color/darker_gray"
+            android:maxLines="2"
+            android:spinnerMode="dropdown"
+            android:text="Industry"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Approximate Number of hours for work done"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
-    </LinearLayout>
+        <Spinner
+            android:id="@+id/hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="match_parent"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:spinnerMode="dropdown"
+            android:padding="30dp"
+            android:maxLines="2"
+            android:layout_margin="10dp"
+            android:dropDownSelector="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="payment range"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:dropDownWidth="match_parent"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:spinnerMode="dropdown"
+            android:maxLines="2"
+            android:layout_margin="10dp"
+            android:dropDownSelector="@android:color/darker_gray" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="precise location of work"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:dropDownWidth="match_parent"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:spinnerMode="dropdown"
+            android:maxLines="2"
+            android:layout_margin="10dp"
+            android:dropDownSelector="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/topayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="post!"
+            android:backgroundTint="@color/teal_700"
+            android:layout_margin="30dp"/>
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </FrameLayout>

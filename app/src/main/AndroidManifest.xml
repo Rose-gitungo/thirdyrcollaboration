@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KaziMtaani">
         <activity
-            android:name=".profile"
+            android:name=".api"
             android:exported="true" />
         <activity
-            android:name=".postjob"
+            android:name=".payout"
             android:exported="true" />
         <activity
             android:name=".getjob"
@@ -23,15 +23,13 @@
             android:exported="true" />
         <activity
             android:name=".login"
-            android:exported="true"
-             />
+            android:exported="true" />
         <activity
             android:name=".signuppage"
             android:exported="true" />
         <activity
-            android:name=".homepage"
-            android:exported="true"
-            >
+            android:name=".dashboardd"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

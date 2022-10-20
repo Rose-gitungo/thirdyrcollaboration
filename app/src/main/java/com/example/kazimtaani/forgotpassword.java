@@ -47,7 +47,7 @@ Button button2submit;
                               if (task.isSuccessful()){
                                   Toast.makeText(forgotpassword.this,"Email has been reset",Toast.LENGTH_SHORT).show();
                               }else{
-                                  Toast.makeText(forgotpassword.this, "Email ACcount not found", Toast.LENGTH_SHORT).show();
+                                  Toast.makeText(forgotpassword.this, "Email Account not found", Toast.LENGTH_SHORT).show();
                               }
                           }
                       });

@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -72,19 +73,30 @@ private FirebaseAuth mAuth;
                                     Toast.makeText(signuppage.this,"Account Created Successful",Toast.LENGTH_SHORT).show();
                                     Intent intent=new Intent(signuppage.this,homepage.class);
                                     startActivity(intent);
+                                    FirebaseUser user= mAuth.getCurrentUser();
+                                    updateUI(user);
                                     finish();
                                 } else{
                                 Toast.makeText(signuppage.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                            UpdateUI(null);
+                                }
                             }
-                            }
+
+                            
                         });
                     }}
                 }
 
             }
+
+            private void updateUI(FirebaseUser user) {
+            }
         });
 
         }
+
+    private void UpdateUI(Object o) {
+    }
 
     private void setError(String entered_email_format_is_wrong_) {
     }
