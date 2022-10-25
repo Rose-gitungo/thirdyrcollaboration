@@ -1,16 +1,8 @@
 package com.example.kazimtaani;
 
-import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 class MyPagerAdapter extends FragmentStateAdapter {
 
@@ -28,7 +20,7 @@ class MyPagerAdapter extends FragmentStateAdapter {
            case 2:
                return new summary();
            default:
-               return new pending();
+               return new pendingfragment();
        }
     }
 

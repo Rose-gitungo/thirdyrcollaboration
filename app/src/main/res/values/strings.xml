@@ -3,6 +3,13 @@
     <string name="kaziMtaani">Kazi Mtaani</string>
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+    <string-array name="industries">
+        <item>Gardening</item>
+        <item>House maintenance</item>
+        <item>Plumbing</item>
+        <item>automotives</item>
+        <item>Jua-kali</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

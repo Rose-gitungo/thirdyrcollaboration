@@ -25,11 +25,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="30dp"
-                android:dropDownWidth="70dp"
                 style="@style/Widget.AppCompat.Spinner.DropDown"
                 android:spinnerMode="dropdown"
                 android:gravity="center"
                 android:maxLines="2"
+                android:dropDownWidth="match_parent"
                 android:layout_margin="10dp"
                 android:dropDownSelector="@android:color/darker_gray" />
 
@@ -102,17 +102,15 @@
                 android:layout_margin="10dp"
                 android:dropDownWidth="match_parent"
                 android:dropDownSelector="@android:color/darker_gray" />
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp">
 
-                <com.google.android.material.textfield.TextInputEditText
+
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Input Phone Number"
-                    android:inputType="phone" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:inputType="phone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_margin="10dp"/>
 
 
             <Button
@@ -120,7 +118,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="75dp"
-                android:backgroundTint="#009688"
+                android:backgroundTint="@color/teal_200"
                 android:hint="Post!"
                 android:textSize="20sp" />
         </LinearLayout>

@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:text="Deposit to Wallet"
             android:layout_margin="20dp"
-
+            android:backgroundTint="@color/teal_200"
             android:padding="@dimen/browser_actions_context_menu_min_padding"
             />
 
@@ -171,6 +171,7 @@
             android:layout_height="wrap_content"
             android:text="logout"
             android:gravity="center"
+            android:backgroundTint="@color/teal_200"
             android:layout_margin="100dp"
             />
 

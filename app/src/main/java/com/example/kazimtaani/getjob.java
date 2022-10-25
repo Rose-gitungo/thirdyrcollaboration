@@ -60,8 +60,6 @@ public class getjob extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 Log.v("Industry", (String) adapterView.getItemAtPosition(i));
-                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
-
             }
 
             @Override

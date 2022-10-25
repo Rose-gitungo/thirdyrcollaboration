@@ -30,26 +30,29 @@
                     android:layout_height="300dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="30dp"
-                            android:src="@drawable/string"/>
+                            android:layout_margin="20dp"
+                            android:id="@+id/industry1"
+                           android:text="job posts\n\n"/>
 
-                        <ImageView
+                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/theory"
-                            android:layout_margin="30dp"/>
-                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:id="@+id/payment1"
+                            android:text="advertising their services\n\n"/>
+                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="30dp"
-                            android:src="@drawable/milky"/>
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:id="@+id/location1"
+                            android:text="user data from post jobs appear here\n\n"/>
 
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -71,20 +74,21 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="30dp"
-                            android:src="@drawable/t1"/>
+                            android:src="@drawable/string"/>
+
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/t1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/theory"
                             android:layout_margin="30dp"/>
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/t3"
-                            android:layout_margin="30dp"/>
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="30dp"
+                            android:src="@drawable/milky"/>
 
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -315,7 +319,7 @@
 
             <Button
                 android:id="@+id/painter"
-                android:layout_width="164dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00BCD4"
                 android:text="Painter" />

@@ -1,5 +1,6 @@
 package com.example.kazimtaani;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -20,6 +21,14 @@ public class payment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootview= inflater.inflate(R.layout.fragment_payment, container, false);
+        rootview.findViewById(R.id.tosummary).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(),summary.class);
+                startActivity(intent);
+            }
+        });
+
         return rootview;
     }
 }

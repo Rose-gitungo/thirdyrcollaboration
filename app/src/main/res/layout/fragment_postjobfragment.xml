@@ -6,7 +6,7 @@
     tools:context=".postjobfragment">
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -19,21 +19,20 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:gravity="center"
-            android:text="Select job category"
+            android:text="Select job industry"
             android:textSize="20dp"
+            android:textStyle="bold"
             />
 
-        <Spinner
-            android:id="@+id/spinner2"
+
+        <EditText
+            android:id="@+id/industry"
             style="@style/Widget.AppCompat.Spinner.DropDown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:dropDownWidth="match_parent"
             android:padding="30dp"
-            android:dropDownSelector="@android:color/darker_gray"
-            android:maxLines="2"
-            android:spinnerMode="dropdown"
             android:text="Industry"
             android:visibility="visible" />
         <TextView
@@ -45,11 +44,12 @@
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <Spinner
+        <EditText
             android:id="@+id/hours"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:dropDownWidth="match_parent"
+            android:text="hours"
             style="@style/Widget.AppCompat.Spinner.DropDown"
             android:spinnerMode="dropdown"
             android:padding="30dp"
@@ -64,7 +64,7 @@
             android:textSize="20dp"
             android:gravity="center"
             android:textStyle="bold" />
-        <Spinner
+        <EditText
             android:id="@+id/pay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,6 +74,7 @@
             android:spinnerMode="dropdown"
             android:maxLines="2"
             android:layout_margin="10dp"
+            android:text="Payment"
             android:dropDownSelector="@android:color/darker_gray" />
 
         <TextView
@@ -81,11 +82,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:gravity="center"
-            android:text="precise location of work"
+            android:text=" location of work"
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <Spinner
+        <EditText
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,6 +95,7 @@
             style="@style/Widget.AppCompat.Spinner.DropDown"
             android:spinnerMode="dropdown"
             android:maxLines="2"
+            android:text="Location"
             android:layout_margin="10dp"
             android:dropDownSelector="@android:color/darker_gray" />
 

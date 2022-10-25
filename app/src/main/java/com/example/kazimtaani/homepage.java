@@ -26,6 +26,11 @@ private FirebaseAuth mAuth;
     protected void onStart() {
         super.onStart();
         FirebaseUser currentUser =mAuth.getCurrentUser();
+        if(currentUser!=null){
+            recreate();
+        }else {
+
+        }
         updateUI(currentUser);
     }
 

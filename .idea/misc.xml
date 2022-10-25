@@ -21,11 +21,12 @@
         <entry key="..\:/KaziMtaani/app/src/main/res/layout/activity_postjob.xml" value="0.22" />
         <entry key="..\:/KaziMtaani/app/src/main/res/layout/activity_profile.xml" value="0.18" />
         <entry key="..\:/KaziMtaani/app/src/main/res/layout/activity_recommendworker.xml" value="0.209009009009009" />
-        <entry key="..\:/KaziMtaani/app/src/main/res/layout/activity_signuppage.xml" value="0.18" />
-        <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_homefragment.xml" value="0.18" />
+        <entry key="..\:/KaziMtaani/app/src/main/res/layout/activity_signuppage.xml" value="0.1" />
+        <entry key="..\:/KaziMtaani/app/src/main/res/layout/dropdownitem.xml" value="0.1" />
+        <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_homefragment.xml" value="0.1396957123098202" />
         <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_payment.xml" value="0.21" />
-        <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_pending.xml" value="0.1" />
-        <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_postjobfragment.xml" value="0.22" />
+        <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_pending.xml" value="0.18" />
+        <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_postjobfragment.xml" value="0.15" />
         <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_profilefragment.xml" value="0.18" />
         <entry key="..\:/KaziMtaani/app/src/main/res/layout/fragment_summary.xml" value="0.1" />
         <entry key="..\:/KaziMtaani/app/src/main/res/menu/navigation_menu.xml" value="0.12727272727272726" />
